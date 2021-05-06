@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Manrope", sans-serif;
+}
+
+main {
+  background-color: #fafbff;
+}
+
+main .main-intro {
+  width: 100%;
+  height: 40vh;
+  background-color: #eaeefb;
+  border-bottom-left-radius: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 50px;
+}
+
+main .main-intro h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #293356;
+  z-index: 2;
+  margin-top: 35px;
+}
+
+main .main-intro p {
+  font-size: 1.2rem;
+  color: #858fad;
+  text-align: center;
+  width: 50%;
+  line-height: 2rem;
+  margin-top: 5px;
+  z-index: 2;
+}
+
+main .main-intro span {
+  width: 150px;
+  height: 150px;
+  background-image: url("/images/pattern-circles.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 1;
+}
