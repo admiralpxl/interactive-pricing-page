@@ -55,7 +55,7 @@ main .main-intro span {
 main .main-prices {
   width: 100%;
   height: 350px;
-  background-color: #fafbff;
+  background-color: hsl 0, 0%, 100%;
   display: flex;
   justify-content: center;
 }
@@ -68,7 +68,7 @@ main .main-prices article {
   max-width: 500px;
   height: 400px;
   border-radius: 10px;
-  background-color: white;
+  background-color: #fafbff;
   position: absolute;
   top: calc(50% - 120px);
 }
@@ -139,6 +139,7 @@ input[type=range] {
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 80%;
+  cursor: pointer;
   margin: auto;
 }
 
@@ -180,6 +181,7 @@ input[type=range]::-webkit-slider-thumb {
   width: 30px;
   justify-self: center;
   align-self: center;
+  cursor: pointer;
 }
 
 .slider {
@@ -243,16 +245,36 @@ input:checked + .slider:before {
 
 .main-prices-barr-list ul li {
   font-size: 1.2rem;
-  margin: 5px;
+  margin: 8px;
   color: #858fad;
 }
 
 .main-prices-barr-list ul li span {
   width: 10px;
   height: 10px;
+  display: inline-block;
   background-image: url("../images/icon-check.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  margin: 3px;
+  background-size: contain;
+  margin: 0px 3px;
+  margin-right: 8px;
+}
+
+.main-prices-barr-list input {
+  width: 180px;
+  height: 40px;
+  background-color: #293356;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fafbff;
+  align-self: center;
+  cursor: pointer;
+}
+
+.main-prices-barr-list input:hover {
+  background-color: #bdccff;
 }
