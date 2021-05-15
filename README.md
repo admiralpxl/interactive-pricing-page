@@ -4,4 +4,4 @@
 
 ## Welcome! 👋
 
-[Link](https://price-interactive.netlify.app/ "See the site here").
+[See the site here](https://price-interactive.netlify.app/ "See the site here").

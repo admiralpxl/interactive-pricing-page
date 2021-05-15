@@ -66,11 +66,12 @@ main .main-prices article {
   align-items: center;
   width: 80%;
   max-width: 500px;
-  height: 400px;
+  height: 380px;
   border-radius: 10px;
   background-color: #fafbff;
   position: absolute;
   top: calc(50% - 120px);
+  box-shadow: 0px 9px 20px 0px #8c8989;
 }
 
 .main-prices .main-prices-barr {
@@ -100,6 +101,13 @@ main .main-prices article {
 
 .main-prices-barr .price {
   grid-row: 3;
+}
+
+.main-prices-barr .tiempo {
+  font-size: 1.6rem;
+  color: #cdd7ee;
+  font-weight: 300;
+  text-align: center;
 }
 
 .main-prices .price span {
@@ -169,6 +177,10 @@ input[type=range]::-webkit-slider-thumb {
   background-image: url("../images/icon-slider.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background-color: #cdd7ee;
 }
 
 .switch input {
@@ -277,4 +289,13 @@ input:checked + .slider:before {
 
 .main-prices-barr-list input:hover {
   background-color: #bdccff;
+}
+
+footer {
+  width: 96%;
+  height: 10px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  margin: auto;
 }
