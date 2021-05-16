@@ -9,6 +9,15 @@ let anual = precio.map( (x) => x * porcentaje);
 let cantidad = ['10K','50K','100K','500K','1M']
 
 addEventListener('load',inicio,false); 
+function actualizar(){
+    if(check.checked == true){
+        texto(tipo,'/ Year');
+        texto(valores, `$${anual[rango.value -1]}.00`);
+        } else {
+            texto(tipo, '/ moth');
+            texto(valores, `$${precio[rango.value -1]}.00`); 
+        }
+}
 
 
 const texto = (lugar,valor) =>  lugar.innerHTML = valor;

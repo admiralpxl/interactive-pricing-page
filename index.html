@@ -21,7 +21,7 @@
         <h2> <span id="pages">100K</span>  PAGEVIEWS</h2>
 
 
-        <input type="range" id="slider" min="1" max="5"/>
+        <input class="range" type="range" id="slider" min="1" max="5"/>
 
        <p class="tiempo" id="tiempo"><span class="price" id="valor">$16.00 </span> <span id="tipo"> / moth </span></p>
 
@@ -31,10 +31,10 @@
             Monthly Billing
           </p>
           <label class="switch">
-            <input id="check" type="checkbox">
+            <input id="check" type="checkbox" onclick="actualizar()">
             <span class="slider round"></span>
           </label>
-          <p>
+          <p class="descuento">
             Yearly Billing <span>-25%</span>
           </p>
         </div>
@@ -59,7 +59,7 @@
   <footer class="attribution">
     
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/admiralpxl/">Junior Carrillo</a>.
+    Coded by <a href="https://github.com/admiralpxl/interactive-pricing-page">admiralpxl</a>.
   </footer>
   <script src="index.js"></script>
 </body>

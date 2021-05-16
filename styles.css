@@ -106,7 +106,6 @@ main .main-prices article {
 
 .main-prices-barr .tiempo {
   font-size: 1.6rem;
-  color: #cdd7ee;
   font-weight: 300;
   text-align: center;
 }
@@ -299,4 +298,59 @@ footer {
   font-weight: 400;
   text-align: center;
   margin: auto;
+}
+
+@media (min-width: 720px) {
+  .main-prices .main-prices-barr {
+    grid-template-rows: repeat(3, 65px);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-prices-barr h2 {
+    grid-row: 1;
+  }
+
+  .main-prices-barr .range {
+    grid-row: 2;
+    grid-column: 1/3;
+  }
+
+  .main-prices-barr .price {
+    grid-row: 1;
+    grid-column: 2/3;
+  }
+
+  .main-prices-barr .tiempo {
+    padding: 12px;
+  }
+
+  .main-prices-barr-paid {
+    grid-row: 3;
+    grid-column: 1/3;
+  }
+
+  .main-prices-barr-paid p {
+    justify-self: end;
+  }
+
+  .main-prices-barr-paid .descuento {
+    justify-self: start;
+  }
+
+  .main-prices-barr-paid p span::after {
+    content: " Discount";
+  }
+
+  .main-prices-barr-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main-prices-barr-list ul {
+    text-align: start;
+  }
+
+  .main-prices-barr-list input {
+    justify-self: center;
+  }
 }
