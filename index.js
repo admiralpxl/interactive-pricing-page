@@ -55,4 +55,5 @@ function cambiodevalor(){
 function inicio() {
     rango.addEventListener('touchmove',cambiodevalor,false);
     rango.addEventListener('mousemove',cambiodevalor,false);
+    rango.addEventListener('change',cambiodevalor);
 }
